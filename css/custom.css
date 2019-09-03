@@ -1,0 +1,299 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Times;
+}
+html{
+	
+}
+body{
+	overflow-x: hidden;
+}
+
+/*-------------------------------------------------------------------------------*/
+.shrink{
+	background-color: rgba(0,0,0,0.5);
+	color: #efefef;
+	height: 60px;
+	padding-top: 0;
+}
+.shrink .navbar-brand{
+	font-size: 22px!important;
+}
+.shrink ul{
+	font-size: 14px!important;
+}
+/*-------------------------------------------------------------------------------*/
+.navbar-nav li a{
+	float: right;
+	color: #fff!important;
+}
+.navbar-brand{
+	color: #fff!important;
+	font-size: 30px!important;
+	font-weight: 300;
+	text-transform: capitalize;
+	transform: translateX(-100rem);
+	animation: slideIn .8s forwards;
+}
+.navbar-brand span{
+	color: teal!important;
+	font-weight: bold;
+}
+.navbar-toggler{
+	border:none!important;
+	outline: none!important;
+}
+nav {
+	padding-left: 100px!important;
+}
+nav .fa-bars{
+	color: #fff;
+	font-size: 27px!important;
+}
+nav ul{
+	font-size: 16px!important;
+	text-transform: uppercase;
+}
+nav ul li{
+	transform: translateX(100rem);
+	animation: slideIn .8s forwards;
+}
+nav ul li:nth-child(1){
+	animation-delay: 0s;
+}
+nav ul li:nth-child(2){
+	animation-delay: 0.5s;
+}
+nav ul li:nth-child(3){
+	animation-delay: 1s;
+}
+nav ul li:nth-child(4){
+	animation-delay: 1.5s;
+}
+nav ul li:nth-child(5){
+	animation-delay: 2s;
+}
+nav ul li:nth-child(6){
+	animation-delay: 2.5s;
+}
+nav ul li a{
+	padding: .5rem 0;
+	margin: 0 .5rem;
+	position: relative;
+	letter-spacing: 2px;
+}
+nav ul li a:last-child{
+	margin-right: 0;
+}
+nav ul li a::before,
+nav ul li a::after{
+	content: '';
+	width: 100%;
+	position: absolute;
+	height: 2px;
+	background-color: teal;
+	left: 0;
+	transform:scaleX(0);
+	transition: all 0.5s;
+}
+nav ul li a::before{
+	top: 0;
+	transform-origin: left;
+}
+nav ul li a::after{
+	bottom: 0;
+	transform-origin: right;
+}
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+	transform:scaleX(1)!important;
+	cursor: pointer;
+}
+@keyframes slideIn{
+	from{
+
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+.home{
+	background: linear-gradient(to bottom,rgba(0,0,0,0.7), rgba(0,0,0,0.3)) , 
+	url("../img/banner.png") center no-repeat;
+}
+#header{
+	width: 100%;
+	height: 60vh;
+	background-size: cover;
+}
+/*-------------------------------------------------------------------------------*/
+.intro{
+	padding: 50px 100px;
+	background-color: transparent;
+	margin-top: -250px;
+	color: #fff;
+	font-size: 16px;
+}
+
+/*-------------------------------------------------------------------------------*/
+#products{
+	padding-top: 50px;
+	padding-bottom: 80px;
+	background-color: #efefef;
+}
+#products h1{
+	text-transform: capitalize;
+	text-align: center;
+	margin-bottom: 50px;
+}
+#products .card{
+	border-top-left-radius: 0!important;
+	border-top-right-radius: 20px!important;
+	border-bottom-right-radius: 0!important;
+	border-bottom-left-radius: 20px!important;
+	border:none!important;
+}
+.frames{
+	background: linear-gradient(to bottom,rgba(0,0,0,0.2), rgba(0,0,0,0.1)) , 
+	url("../img/designer-frames.png") center no-repeat;
+	background-size: cover;
+	height: 50vh;
+	padding: 50px;
+	color: #fff;
+}
+.frames:hover{
+	background: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0)) , 
+	url("../img/designer-frames.png") center no-repeat;
+	background-size: cover;
+}
+
+.bifocal-lenses{
+	background: linear-gradient(to bottom,rgba(0,0,0,0.4), rgba(0,0,0,0.3)) , 
+	url("../img/bifocal-lenses-bg.jpg") center no-repeat;
+	background-size: cover;
+	height: 50vh;
+	padding: 50px;
+	color: #fff;
+}
+.progressive-lenses{
+	background: linear-gradient(to bottom,rgba(0,0,0,0.4), rgba(0,0,0,0.3)) , 
+	url("../img/progressive-lenses.png") center no-repeat;
+	background-size: cover;
+	height: 50vh;
+	padding: 50px;
+	color: #fff;
+}
+.progressive-lenses:hover{
+	background: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0)) , 
+	url("../img/progressive-lenses.png") center no-repeat;
+	background-size: cover;
+	}
+.photochromatic-lenses{
+	background: linear-gradient(to bottom,rgba(0,0,0,0.4), rgba(0,0,0,0.3)) , 
+	url("../img/photochromatic-lenses.jpg") center no-repeat;
+	background-size: cover;
+	height: 50vh;
+	padding: 50px;
+	color: #fff;
+}
+#products h2{
+	position:absolute;
+	left: 10px;
+	bottom:220px;
+}
+#products hr{
+	background-color: #fff;
+	opacity: 0.7;
+	width: 20%;
+	height: 3px;
+	position:absolute;
+	left: 10px;
+	bottom:200px; 
+}
+#products p{
+	position:absolute;
+	left: 10px;
+	padding-right: 80px;
+	bottom: 100px!important;
+	font-size: 18px;
+}
+#products .home-btn{
+	position: absolute;
+	left: 10px;
+	bottom:50px;
+	padding: 10px;
+	color: #fff;
+	background-color: transparent;
+	font-size: 16px;
+	font-weight: bold;
+	border:3px solid rgba(255,255,255, 0.7);
+	border-radius: 0;
+	text-transform: uppercase;
+}
+#products .home-btn:hover{
+	color: #fff;
+	border:3px solid rgba(255,255,255, 1);
+}
+
+/*-------------------------------------------------------------------------------*/
+.eye-check-up{
+	
+}
+/*-------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+#footer{
+	padding: 50px;
+	color: #fff;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.4)),
+	url("../img/sigmart-opticals-bg.png") center no-repeat;
+	background-size: cover;
+	background-position: sticky;
+}
+#footer h5{
+	font-size: 20px;
+	text-align: left;
+	margin-bottom: 20px;
+}
+#footer .row hr{
+	background-color: #fff;
+	height: 2px;
+	width: 30%;
+}
+#footer p,#footer p a{
+	font-size: 18px;
+	text-align: left;
+}
+#footer p a{
+	color: #fff!important;
+	text-decoration: none;
+}
+#footer .fa{
+	padding-right: 20px;
+	font-size: 16px;
+}
+#footer hr{
+	margin-top: 10px;
+	background-color: #fff;
+}
+#footer .fa-heart{
+	color: red;
+	margin-left: 10px;
+	padding-right: 10px;
+}
+#footer .copyright{
+	margin-bottom: -30px;
+	font-size: 17px;
+}
+#footer .left{
+	margin-left: 500px;
+}
+#footer .copyright span{
+	font-weight: bold;
+	color: teal;
+}
+/*-------------------------------------------------------------------------------*/
+@media and 
+/*-----------------------------------------------------------------*/
