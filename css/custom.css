@@ -134,6 +134,9 @@ nav ul li a:hover::after{
 	color: #fff;
 	font-size: 16px;
 }
+.intro-mobile{
+	display: none;
+}
 
 /*-------------------------------------------------------------------------------*/
 #products{
@@ -192,6 +195,7 @@ nav ul li a:hover::after{
 	background: linear-gradient(to bottom,rgba(0,0,0,0.4), rgba(0,0,0,0.3)) , 
 	url("../img/photochromatic-lenses.jpg") center no-repeat;
 	background-size: cover;
+	height: 50vh;
 	padding: 50px;
 	color: #fff;
 }
@@ -243,7 +247,7 @@ nav ul li a:hover::after{
 #eye-check-up{
 	padding-top: 120px;
 	padding-bottom: 80px;
-	background: linear-gradient(to bottom, rgba(0,100,128), rgba(0,128,60));
+	background: linear-gradient(to bottom, rgba(0,100,128), rgba(0,128,60))!important;
 	color: #efefef;
 }
 #eye-check-up .home-btn{
@@ -289,7 +293,7 @@ nav ul li a:hover::after{
 	background-color: #fff;
 	height: 2px;
 	width: 30%;
-	margin-left: 0;
+	align-self: flex-start;
 }
 #footer p,#footer p a{
 	font-size: 18px;
@@ -324,5 +328,100 @@ nav ul li a:hover::after{
 	color: teal;
 }
 /*-------------------------------------------------------------------------------*/
-@media and 
+@media only screen and (max-width: 600px){
+	#intro{
+		display: none;
+	}
+	.intro-mobile{
+		color: #efefef;
+		display: contents;
+		text-align: center;
+	}
+	.intro-mobile h1{
+		font-size: 25px;
+	}
+	nav{
+		margin-bottom: 100px;
+		padding-left: 20px!important;
+	}
+	.navbar-brand{
+		font-size: 27px!important;
+	}
+	#header{
+		height: 50vh;
+	}
+	.frames,.bifocal-lenses,.progressive-lenses,.photochromatic-lenses{
+		height: 40vh!important;
+	}
+	#products{
+		padding-top: 50px;
+		padding-bottom: 80px;
+		background-color: #efefef;
+	}
+	#products h1{
+		font-size: 27px;
+		margin-bottom: 30px;
+	}
+	#products h2{
+		font-size: 22px;
+		bottom:220px;
+}
+	#products hr{
+		height: 2px;
+		bottom:200px; 
+	}
+	#products p{
+		position:absolute;
+		left: 10px;
+		padding-right: 80px;
+		bottom: 100px!important;
+		font-size: 16px;
+	}
+	#products p br{
+		display: none;
+	}
+	#products .home-btn{
+		font-size: 14px;
+		border:2px solid rgba(255,255,255, 0.7);
+	}
+	.sect-mobile{
+		margin-bottom: 20px;
+	}
+	/*-------------------------------------------------------------------------------*/
+	#eye-check-up{
+		padding-top: 50px;
+		padding-bottom: 40px;
+		background: linear-gradient(to bottom, rgba(0,100,128), rgba(0,128,60))!important;
+		color: #efefef;
+	}
+	#eye-check-up .home-btn{
+		left: 10px;
+		bottom:50px;
+		padding: 10px;
+		color: #efefef;
+		background-color: transparent;
+		font-size: 12px;
+		font-weight: bold;
+		border:3px solid rgba(255,255,255, 0.7);
+		border-radius: 0;
+		text-transform: uppercase;
+	}
+	#eye-check-up .home-btn:hover{
+		color: #efefef;
+		border:3px solid rgba(255,255,255, 1);
+	}
+	#eye-check-up h1{
+		margin-top: 0px;
+		font-size: 27px;
+	}
+	#eye-check-up .col-md-6{
+		margin-bottom: 27px;
+	}
+	#eye-check-up p{
+		font-size: 16px;
+	}
+
+/*-------------------------------------------------------------------------------*/
+	
+} 
 /*-----------------------------------------------------------------*/
